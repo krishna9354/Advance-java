@@ -1,6 +1,8 @@
 package area;
 
-class Area {
+
+
+Abstract class Area {
     int r,l,b;
     //area constructor
     // Area() {
@@ -40,12 +42,26 @@ public class AreaMain {
 // and call getArea method
 // it means it can access the method of parent class
         Circle c = new Circle(12);
+        // upcasting
         c.getArea();
+
+        // Circle r =(Circle) new Area("abc");
+      
+        // downcasting
+
         c.getCircleArea();
 
 
     }
-}
+}  
 
 
 //Sub Class Constructor implicitly calls Super Class Default Constructor(Always).  
+
+//Abstract class is an incomplete class that cannot be instantiated and is used as a base for other classes.
+//it cannot have a reference variable of its own type but can have reference variables of its subclass types.
+//interfaces are incomplete classes that cannot be instantiated and are used to define a contract for classes that implement them. 
+//they are developed to get in the sub class and take reference of the sub class and call the method of the sub class.
+//abstract class object only can be declared but cannot be instantiated. It can have reference variable of its own type but cannot create object of its own type. 
+//if you have any abstract method in the class then the class must be declared as abstract class.
+//but if a class if a abstract class then it is not necessary that it should have abstract method.
