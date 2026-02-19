@@ -58,3 +58,5 @@ public class MainPoly {
 // when an anonymous class is called its method of child class will be called. it can only called its own method and not the parent class method. 
 // overloading can be done in the same class and can be also done in the child class. overriding can only be done in the child class.
 // overloading is compile time polymorphism and overriding is runtime polymorphism.
+
+//static function can call static function and non static function can call static function but static function cannot call non static function. because static function is called by class name and non static function is called by object reference. so static function cannot access non static function because it does not have an object reference. but non static function can access static function because it has an object reference.
