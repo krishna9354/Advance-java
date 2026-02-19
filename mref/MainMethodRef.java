@@ -1,10 +1,18 @@
 package mref;
 
 class Circle {
-    //if the method will be static then, we have to change the method reference to Circle::area instead of c::area because static methods are associated with the class rather than an instance of the class.here the instance of the class is not required to invoke the static method.
+   
+    Circle() {
+        System.out.println("Constructor  in Circle class");
+    }
+    Circle(String msg) {
+        System.out.println(msg);
+    }
+
+     //if the method will be static then, we have to change the method reference to Circle::area instead of c::area because static methods are associated with the class rather than an instance of the class.here the instance of the class is not required to invoke the static method.
     
 
-    double area(int r) {
+    static double area(int r) {
         return Math.PI * r * r;
     }
 }
